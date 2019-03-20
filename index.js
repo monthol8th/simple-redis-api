@@ -19,7 +19,7 @@ app.get("/", function(req, res) {
     if (err) {
       res.status(500).json({ error: err });
     } else {
-      const data = { number: parseInt(result) || 0 };
+      var data = { number: parseInt(result) || 0 };
       console.log(data);
       res.json(data);
     }
@@ -37,8 +37,8 @@ app.post("/increase", function(req, res) {
     if (err) {
       res.status(500).json({ error: err });
     } else {
-      const number = (parseInt(result) || 0) + 1;
-      const data = { number };
+      var number = (parseInt(result) || 0) + 1;
+      var data = { number };
       console.log(data);
       redis.set("data", number);
       res.json(data);
@@ -51,8 +51,8 @@ app.post("/decrease", function(req, res) {
     if (err) {
       res.status(500).json({ error: err });
     } else {
-      const number = (parseInt(result) || 0) - 1;
-      const data = { number };
+      var number = (parseInt(result) || 0) - 1;
+      var data = { number };
       console.log(data);
       redis.set("data", number);
       res.json(data);
