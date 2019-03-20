@@ -6,8 +6,6 @@
 █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█  
 
 
-***
-
 5-minute work that forked from [Exceed14's Web Service](https://github.com/monthol8th/exceed-web-service).
 
 ***
